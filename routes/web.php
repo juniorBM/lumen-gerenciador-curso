@@ -34,6 +34,6 @@ $router->delete('curso/{id}', 'CursosController@deletarCurso');
  */
 $router->get('aluno', 'AlunosController@all');
 $router->get('aluno/{id}', 'AlunosController@get');
-$router->post('aluno', 'AlunosController@add');
+$router->post('aluno', 'AlunosController@adicionarAluno');
 $router->put('aluno/{id}', 'AlunosController@put');
 $router->delete('aluno/{id}', 'AlunosController@remove');

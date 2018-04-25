@@ -4,14 +4,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aluno extends Model {
 
-    protected $fillable = [];
-
-    protected $dates = [];
-
-    public static $rules = [
-        // Validation rules
+    protected $fillable = [
+        'nome', 'sobrenome', 'email', 'data_nascimento', 'sexo', 'cor'
     ];
-
-    // Relationships
 
 }
