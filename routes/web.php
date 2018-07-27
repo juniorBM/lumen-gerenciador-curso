@@ -37,3 +37,13 @@ $router->get('aluno/{id}', 'AlunosController@get');
 $router->post('aluno', 'AlunosController@adicionarAluno');
 $router->put('aluno/{id}', 'AlunosController@put');
 $router->delete('aluno/{id}', 'AlunosController@remove');
+
+/**
+ * Routes for resource user
+ */
+$router->get('user', 'UsersController@all');
+$router->get('user/{id}', 'UsersController@get');
+$router->post('user', 'UsersController@add');
+$router->put('user/{id}', 'UsersController@put');
+$router->delete('user/{id}', 'UsersController@remove');
+$router->post('user/checktoken', 'UsersController@checkToken');
