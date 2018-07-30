@@ -96,6 +96,10 @@ $app->middleware([
     App\Http\Middleware\CorsMiddleware::class
 ]);
 
+$app->singleton('filesystem', function ($app) {
+    return $app->loadComponent('filesystems', 'Illuminate\Filesystem\FilesystemServiceProvider', 'filesystem');
+});
+
 $app->router->group([
     'namespace' => 'App\Http\Controllers',
 ], function ($router) {

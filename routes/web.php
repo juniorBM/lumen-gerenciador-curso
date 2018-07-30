@@ -47,3 +47,12 @@ $router->post('user', 'UsersController@add');
 $router->put('user/{id}', 'UsersController@put');
 $router->delete('user/{id}', 'UsersController@remove');
 $router->post('user/checktoken', 'UsersController@checkToken');
+
+/**
+ * Routes for resource feed
+ */
+$router->get('feed', 'FeedsController@all');
+$router->get('feed/{id}', 'FeedsController@get');
+$router->post('feed', 'FeedsController@add');
+$router->put('feed/{id}', 'FeedsController@put');
+$router->delete('feed/{id}', 'FeedsController@remove');
