@@ -51,8 +51,8 @@ $router->post('user/checktoken', 'UsersController@checkToken');
 /**
  * Routes for resource feed
  */
-$router->get('feed', 'FeedsController@all');
+$router->get('feeds-all', 'FeedsController@all');
 $router->get('feed/{id}', 'FeedsController@get');
-$router->post('feed', 'FeedsController@add');
+$router->post('feeds', 'FeedsController@add');
 $router->put('feed/{id}', 'FeedsController@put');
 $router->delete('feed/{id}', 'FeedsController@remove');
